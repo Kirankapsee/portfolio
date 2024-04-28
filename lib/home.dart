@@ -86,13 +86,13 @@ class _HomeState extends State<Home> {
               children: [
                 TextButton.icon(
                   onPressed: () async {
-                    //https:drive.google.com/file/d/1X3FloiMFWq1xbpComLbYuhhpC1-4OBkT/view
+                    //https://drive.google.com/file/d/1x0Y85TnnOGuFFc5YkloDwifJMDG72S0U/view
                     var urllaunchable = await canLaunchUrl(Uri.https(
                         "drive.google.com",
-                        "/file/d/1X3FloiMFWq1xbpComLbYuhhpC1-4OBkT/view"));
+                        "/file/d/1x0Y85TnnOGuFFc5YkloDwifJMDG72S0U/view"));
                     if (urllaunchable) {
                       await launchUrl(Uri.https("drive.google.com",
-                          "/file/d/1X3FloiMFWq1xbpComLbYuhhpC1-4OBkT/view"));
+                          "/file/d/1x0Y85TnnOGuFFc5YkloDwifJMDG72S0U/view"));
                     } else {
                       snack();
                     }
@@ -453,6 +453,72 @@ class _HomeState extends State<Home> {
                                     child: Padding(
                                       padding: const EdgeInsets.all(8),
                                       child: Image.asset(
+                                        "assets/appwrite.png",
+                                      ),
+                                    )),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(4, 8, 16, 8),
+                                  child: Text(
+                                    "Appwrite",
+                                    style: GoogleFonts.openSans(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Card(
+                            elevation: 3,
+                            shadowColor: Color.fromARGB(255, 100, 99, 99),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            color: Color.fromARGB(255, 0, 0, 0),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                    width: 100,
+                                    height: 75,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8),
+                                      child: Image.asset(
+                                        "assets/aws.png",
+                                      ),
+                                    )),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(4, 8, 16, 8),
+                                  child: Text(
+                                    "AWS",
+                                    style: GoogleFonts.openSans(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          
+                          
+                          Card(
+                            elevation: 3,
+                            shadowColor: Color.fromARGB(255, 100, 99, 99),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            color: Color.fromARGB(255, 0, 0, 0),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                    width: 100,
+                                    height: 75,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8),
+                                      child: Image.asset(
                                         'assets/git.png',
                                       ),
                                     )),
@@ -572,6 +638,70 @@ class _HomeState extends State<Home> {
                                       const EdgeInsets.fromLTRB(4, 8, 16, 8),
                                   child: Text(
                                     "Python",
+                                    style: GoogleFonts.openSans(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Card(
+                            elevation: 3,
+                            shadowColor: Color.fromARGB(255, 100, 99, 99),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            color: Color.fromARGB(255, 0, 0, 0),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                    width: 100,
+                                    height: 75,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8),
+                                      child: Image.asset(
+                                        "assets/golang.png",
+                                      ),
+                                    )),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(4, 8, 16, 8),
+                                  child: Text(
+                                    "GO",
+                                    style: GoogleFonts.openSans(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Card(
+                            elevation: 3,
+                            shadowColor: Color.fromARGB(255, 100, 99, 99),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            color: Color.fromARGB(255, 0, 0, 0),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                    width: 100,
+                                    height: 75,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8),
+                                      child: Image.asset(
+                                        "assets/js.png",
+                                      ),
+                                    )),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(4, 8, 16, 8),
+                                  child: Text(
+                                    "JavaScript",
                                     style: GoogleFonts.openSans(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
@@ -779,6 +909,70 @@ class _HomeState extends State<Home> {
                                       const EdgeInsets.fromLTRB(4, 8, 16, 8),
                                   child: Text(
                                     "MySql",
+                                    style: GoogleFonts.openSans(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Card(
+                            elevation: 3,
+                            shadowColor: Color.fromARGB(255, 100, 99, 99),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            color: Color.fromARGB(255, 0, 0, 0),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                    width: 100,
+                                    height: 75,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8),
+                                      child: Image.asset(
+                                        "assets/react.png",
+                                      ),
+                                    )),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(4, 8, 16, 8),
+                                  child: Text(
+                                    "React",
+                                    style: GoogleFonts.openSans(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Card(
+                            elevation: 3,
+                            shadowColor: Color.fromARGB(255, 100, 99, 99),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            color: Color.fromARGB(255, 0, 0, 0),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                    width: 100,
+                                    height: 75,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8),
+                                      child: Image.asset(
+                                        "assets/swift.png",
+                                      ),
+                                    )),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(4, 8, 16, 8),
+                                  child: Text(
+                                    "Swift",
                                     style: GoogleFonts.openSans(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
@@ -1045,35 +1239,34 @@ class _HomeState extends State<Home> {
                   ),
                 ),
                 SizedBox(height: 15),
-                  NeoPopButton(
-                    //bottomShadowColor: Color.fromARGB(255, 225, 225, 225),
-                    //rightShadowColor: Color.fromARGB(255, 255, 255, 255),
-                    color: Color.fromARGB(255, 255, 255, 255),
+                NeoPopButton(
+                  //bottomShadowColor: Color.fromARGB(255, 225, 225, 225),
+                  //rightShadowColor: Color.fromARGB(255, 255, 255, 255),
+                  color: Color.fromARGB(255, 255, 255, 255),
 
-                    onTapUp: () async {
-                      var urllaunchable = await canLaunchUrl(
-                          Uri.https("twitter.com", "/gauransh18"));
-                      if (urllaunchable) {
-                        await launchUrl(Uri.https("twitter.com", "/gauransh18_"));
-                      } else {
-                        snack();
-                      }
-                    },
-                    child: Padding(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text("twitter",
-                              style: GoogleFonts.abel(
-                                color: Color.fromARGB(255, 0, 0, 0),
-                                fontSize: 22,
-                              )),
-                        ],
-                      ),
+                  onTapUp: () async {
+                    var urllaunchable = await canLaunchUrl(
+                        Uri.https("twitter.com", "/gauransh18"));
+                    if (urllaunchable) {
+                      await launchUrl(Uri.https("twitter.com", "/gauransh18_"));
+                    } else {
+                      snack();
+                    }
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("twitter",
+                            style: GoogleFonts.abel(
+                              color: Color.fromARGB(255, 0, 0, 0),
+                              fontSize: 22,
+                            )),
+                      ],
                     ),
                   ),
+                ),
                 // SizedBox(
                 //   height: height-444,
                 // ),

@@ -1,0 +1,23 @@
+def max_sum_non_adjacent(arr):
+    if not arr:
+        return 0
+
+    n = len(arr)
+
+    if n == 1:
+        return arr[0]
+
+    max_sum = [0] * n
+
+    max_sum[0] = arr[0]
+    max_sum[1] = max(arr[0], arr[1])
+
+    for i in range(2, n):
+        max_sum[i] = max(max_sum[i - 1], max_sum[i - 2] + arr[i])
+
+    return max_sum[-1]
+
+# Example usage
+arr = [4,3,6,11,8]
+result = max_sum_non_adjacent(arr)
+print(result)  # Output: 15
