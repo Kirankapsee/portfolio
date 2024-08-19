@@ -188,7 +188,7 @@ class _HomeState extends State<Home> {
                                 // child:
                                 Center(
                               child: Text(
-                                'hi, i\'m gauransh',
+                                'hi, i\'m kiran',
                                 style: GoogleFonts.openSans(
                                   textStyle: TextStyle(
                                     color: Color.fromARGB(255, 255, 255, 255),
@@ -502,8 +502,6 @@ class _HomeState extends State<Home> {
                               ],
                             ),
                           ),
-                          
-                          
                           Card(
                             elevation: 3,
                             shadowColor: Color.fromARGB(255, 100, 99, 99),
@@ -1081,7 +1079,7 @@ class _HomeState extends State<Home> {
                               size: 30,
                             ),
                             SizedBox(width: 10),
-                            Text("by Gauransh Sharma",
+                            Text("by Kiran Kapse",
                                 style: GoogleFonts.abel(
                                     color: Colors.white, fontSize: 22)),
                             SizedBox(width: 10),
@@ -1217,7 +1215,7 @@ class _HomeState extends State<Home> {
 
                   onTapUp: () async {
                     var urllaunchable = await canLaunchUrl(
-                        Uri.https("github.com", "/gauransh18"));
+                        Uri.https("github.com", "/Kirankapsee"));
                     if (urllaunchable) {
                       await launchUrl(Uri.https("github.com", "/gauransh18"));
                     } else {
